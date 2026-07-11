@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>미니게임 모음</title>
+<meta name="description" content="친구·연인과 실시간으로 즐기는 2인 미니게임 모음 - 단어 텔레파시, 단어 승부, 주제 폭탄 돌리기, 색깔 야구, 숫자 세기" />
+<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #EFEBF9;
+    --ink: #251C46;
+    --muted: #8B84A6;
+    --card: #FFFFFF;
+    --line: #D8D2EC;
+    --radius: 20px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    font-family: 'Gowun Dodum', sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    display: flex;
+    justify-content: center;
+  }
+  .app { width: 100%; max-width: 480px; min-height: 100vh; padding: 40px 20px 40px; }
+
+  h1 { font-family: 'Do Hyeon', sans-serif; font-size: 38px; text-align: center; letter-spacing: 1px; }
+  .tagline { text-align: center; color: var(--muted); margin-top: 8px; font-size: 14.5px; margin-bottom: 32px; }
+
+  .grid { display: flex; flex-direction: column; gap: 16px; }
+
+  .game-card {
+    display: block;
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 22px;
+    text-decoration: none;
+    color: inherit;
+    border: 2px solid transparent;
+    border-left: 6px solid var(--accent, var(--line));
+    transition: transform 0.12s;
+  }
+  .game-card:active { transform: scale(0.98); }
+
+  .game-card .top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+  .game-card h2 { font-family: 'Do Hyeon', sans-serif; font-size: 21px; color: var(--accent, var(--ink)); }
+  .game-card .arrow { font-family: 'Do Hyeon', sans-serif; font-size: 18px; color: var(--muted); }
+  .game-card p { font-size: 14px; color: var(--muted); line-height: 1.6; }
+  .game-card .tags { margin-top: 10px; display: flex; gap: 6px; flex-wrap: wrap; }
+  .game-card .tag {
+    font-size: 11.5px; color: var(--accent, var(--muted));
+    background: color-mix(in srgb, var(--accent, var(--muted)) 12%, white);
+    border-radius: 8px; padding: 3px 8px;
+  }
+
+  .app-footer { text-align: center; padding-top: 30px; color: var(--muted); font-size: 12.5px; }
+</style>
+</head>
+<body>
+<div class="app">
+  <h1>미니게임 모음</h1>
+  <p class="tagline">친구·연인과 실시간으로 즐기는 2인 대결 게임들</p>
+
+  <div class="grid">
+    <a class="game-card" style="--accent:#6C3EE8" href="https://word-telepathy.onrender.com" target="_blank" rel="noopener noreferrer">
+      <div class="top"><h2>단어 텔레파시</h2><span class="arrow">→</span></div>
+      <p>같은 단어를 말할 때까지 라운드를 반복하는 텔레파시 게임. 마음이 통해야 이긴다.</p>
+      <div class="tags"><span class="tag">랜덤 매칭</span><span class="tag">초대 코드</span></div>
+    </a>
+
+    <a class="game-card" style="--accent:#1FA3B8" href="https://word-create.onrender.com" target="_blank" rel="noopener noreferrer">
+      <div class="top"><h2>단어 승부</h2><span class="arrow">→</span></div>
+      <p>각자 고른 두 글자가 공개되면, 그 글자를 모두 포함한 단어를 먼저 완성하는 사람이 승리.</p>
+      <div class="tags"><span class="tag">3선</span><span class="tag">난이도 선택</span></div>
+    </a>
+
+    <a class="game-card" style="--accent:#F0883E" href="https://word-potato.onrender.com" target="_blank" rel="noopener noreferrer">
+      <div class="top"><h2>주제 폭탄 돌리기</h2><span class="arrow">→</span></div>
+      <p>정해진 주제에 맞는 답을 번갈아 말하다가 7초 안에 답 못하면 패배. 이미 나온 답은 다시 못 씀.</p>
+      <div class="tags"><span class="tag">주제 10종</span><span class="tag">턴제</span></div>
+    </a>
+
+    <a class="game-card" style="--accent:#E4483C" href="https://color-baseball.onrender.com" target="_blank" rel="noopener noreferrer">
+      <div class="top"><h2>색깔 야구</h2><span class="arrow">→</span></div>
+      <p>숫자 야구를 색상으로 옮긴 빠른 템포의 대결. 상대의 색 배치를 먼저 맞히면 승리.</p>
+      <div class="tags"><span class="tag">3~5개 선택</span><span class="tag">운빨 서든데스</span></div>
+    </a>
+
+    <a class="game-card" style="--accent:#4CAF6D" href="https://number-count.onrender.com" target="_blank" rel="noopener noreferrer">
+      <div class="top"><h2>숫자 세기</h2><span class="arrow">→</span></div>
+      <p>1부터 9까지 입력하고, 성공할 때마다 쌓이는 숨은 규칙을 기억해야 하는 기억력 대결.</p>
+      <div class="tags"><span class="tag">규칙 누적</span><span class="tag">되돌리기</span></div>
+    </a>
+  </div>
+
+  <p class="app-footer">각 게임은 별도 서버에서 실행돼요 · 무료 서버라 오랜만에 접속하면 깨어나는 데 시간이 걸릴 수 있어요</p>
+</div>
+</body>
+</html>
