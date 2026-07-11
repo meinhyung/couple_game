@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://couple-game-together.onrender.com/sitemap.xml

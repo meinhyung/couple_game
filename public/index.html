@@ -6,6 +6,8 @@
 <title>미니게임 모음</title>
 <meta name="description" content="친구·연인과 실시간으로 즐기는 2인 미니게임 모음 - 단어 텔레파시, 단어 승부, 주제 폭탄 돌리기, 색깔 야구, 숫자 세기" />
 <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap" rel="stylesheet" />
+<!-- Google AdSense: 아래 client 값의 ca-pub-XXXXXXXXXXXXXXXX 를 실제 발급받은 퍼블리셔 ID로 교체하세요 -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
 <style>
   :root {
     --bg: #EFEBF9;
@@ -27,7 +29,8 @@
   .app { width: 100%; max-width: 480px; min-height: 100vh; padding: 40px 20px 40px; }
 
   h1 { font-family: 'Do Hyeon', sans-serif; font-size: 38px; text-align: center; letter-spacing: 1px; }
-  .tagline { text-align: center; color: var(--muted); margin-top: 8px; font-size: 14.5px; margin-bottom: 32px; }
+  .tagline { text-align: center; color: var(--muted); margin-top: 8px; font-size: 14.5px; margin-bottom: 20px; }
+  .intro { font-size: 14px; color: var(--ink); line-height: 1.7; margin-bottom: 32px; }
 
   .grid { display: flex; flex-direction: column; gap: 16px; }
 
@@ -55,13 +58,22 @@
     border-radius: 8px; padding: 3px 8px;
   }
 
-  .app-footer { text-align: center; padding-top: 30px; color: var(--muted); font-size: 12.5px; }
+  section.info { margin-top: 40px; }
+  section.info h3 { font-family: 'Do Hyeon', sans-serif; font-size: 18px; margin-bottom: 12px; }
+  section.info ol { padding-left: 20px; font-size: 14px; line-height: 1.9; color: var(--ink); }
+  .faq-item { margin-bottom: 16px; }
+  .faq-item .q { font-weight: bold; font-size: 14px; margin-bottom: 4px; }
+  .faq-item .a { font-size: 13.5px; color: var(--muted); line-height: 1.7; }
+
+  .app-footer { text-align: center; padding-top: 30px; color: var(--muted); font-size: 12.5px; line-height: 2; }
+  .app-footer a { color: var(--muted); text-decoration: underline; }
 </style>
 </head>
 <body>
 <div class="app">
   <h1>미니게임 모음</h1>
   <p class="tagline">친구·연인과 실시간으로 즐기는 2인 대결 게임들</p>
+  <p class="intro">미니게임 모음은 설치나 회원가입 없이 브라우저에서 바로 즐길 수 있는 실시간 2인 대결·협동 게임들을 한곳에 모아둔 사이트예요. 친구나 연인과 초대 코드를 주고받아 같은 방에 들어가거나, 랜덤 매칭으로 낯선 상대와 바로 대결할 수 있어요.</p>
 
   <div class="grid">
     <a class="game-card" style="--accent:#6C3EE8" href="https://word-telepathy.onrender.com" target="_blank" rel="noopener noreferrer">
@@ -95,7 +107,40 @@
     </a>
   </div>
 
-  <p class="app-footer">각 게임은 별도 서버에서 실행돼요 · 무료 서버라 오랜만에 접속하면 깨어나는 데 시간이 걸릴 수 있어요</p>
+  <section class="info">
+    <h3>이용 방법</h3>
+    <ol>
+      <li>원하는 게임 카드를 눌러 이동해요.</li>
+      <li>랜덤 매칭 또는 초대 코드 방 중 하나를 선택해요.</li>
+      <li>초대 코드를 공유하면 친구와 같은 방에서 바로 대결할 수 있어요.</li>
+      <li>무료 서버를 사용해서 오랜만에 접속하면 서버가 깨어나는 데 몇 초 걸릴 수 있어요.</li>
+    </ol>
+  </section>
+
+  <section class="info">
+    <h3>자주 묻는 질문</h3>
+    <div class="faq-item">
+      <div class="q">회원가입이 필요한가요?</div>
+      <div class="a">아니요, 닉네임만 입력하면 바로 플레이할 수 있어요.</div>
+    </div>
+    <div class="faq-item">
+      <div class="q">모바일에서도 플레이할 수 있나요?</div>
+      <div class="a">네, 모바일 브라우저에서도 문제없이 즐길 수 있어요.</div>
+    </div>
+    <div class="faq-item">
+      <div class="q">이용 요금이 있나요?</div>
+      <div class="a">아니요, 모든 게임은 무료로 이용할 수 있어요.</div>
+    </div>
+    <div class="faq-item">
+      <div class="q">개인정보가 저장되나요?</div>
+      <div class="a">게임 진행에 필요한 닉네임 외에 별도의 개인정보를 수집하지 않아요. 자세한 내용은 개인정보처리방침을 확인해주세요.</div>
+    </div>
+  </section>
+
+  <p class="app-footer">
+    각 게임은 별도 서버에서 실행돼요 · 무료 서버라 오랜만에 접속하면 깨어나는 데 시간이 걸릴 수 있어요<br />
+    <a href="/privacy.html">개인정보처리방침</a> · <a href="/terms.html">이용약관</a>
+  </p>
 </div>
 </body>
 </html>
